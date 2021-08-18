@@ -1,21 +1,19 @@
-const messages = []
+let message = []
+let names = []
 
-const names = ['Lisa', 'Kaitlin', 'Jan'];
-
-function writeCards (names, event) {
-    for (let i =0; i < names.length; i++) {
-        messages.push (`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
+function writeCards(names, event){
+    for (let i = 0; i < names.length; i++){
+        message.push (`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
     }
-    return messages;
+    return message;
 }
 
-//console.log(writeCards(names, 'birthday'));
+writeCards(names, "birthday");
 
-function countDown (number) {
-    while (number > -1)
-    console.log(number--);
-    number--;
+
+function countDown (integer){
+    while (integer + 1 > 0){
+        console.log(integer --)
+    }
 }
-
-countDown (10);
 
